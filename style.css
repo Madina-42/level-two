@@ -1,0 +1,107 @@
+/* === GLOBAL STYLES === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+/* === NAVBAR === */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.transition-all {
+  transition: all 0.4s ease-in-out;
+}
+.nav-link:hover {
+  color: #ffc107 !important;
+  transform: scale(1.1);
+}
+
+/* === HERO SECTION FADE-IN === */
+.transition-fade {
+  animation: fadeInUp 1.2s ease-in-out both;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === IMAGE ZOOM & ROTATE === */
+.transition-img img {
+  transition: transform 0.6s ease, filter 0.4s ease;
+}
+.transition-img img:hover {
+  transform: scale(1.06) rotate(-1.5deg);
+  filter: brightness(1.1);
+}
+
+/* === CARDS: SLIDE-UP + SHADOW === */
+.transition-card {
+  transition: all 0.4s ease;
+  will-change: transform, box-shadow;
+}
+.transition-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* === TEXT SLIDE-IN (RIGHT) === */
+.slide-in-right {
+  animation: slideRight 1s ease-out both;
+}
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* === FOOTER SCALE-IN === */
+footer.transition-fade {
+  animation: footerScale 1.3s ease-in-out both;
+}
+@keyframes footerScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* === TEXT & HEADINGS === */
+h2, h4 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.bg-light p {
+  color: #333;
+}
+
+/* === BUTTON HOVER EFFECT === */
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

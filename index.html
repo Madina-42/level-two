@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codeva Technology</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- External Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow transition-all">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <i class="fas fa-laptop-code text-warning fs-4"></i>
+        <span class="fw-bold">Codeva Technology</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link transition-all" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link transition-all" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link transition-all" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <header class="bg-primary text-white text-center py-5 transition-fade">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Innovating with Codeva</h1>
+      <p class="lead fs-5">Empowering businesses through technology and design.</p>
+    </div>
+  </header>
+
+  <!-- ===== IMAGE & TEXT SECTION ===== -->
+  <section class="py-5 bg-light text-center transition-fade">
+    <div class="container">
+      <h2 class="mb-5 display-6 fw-semibold">Who We Are</h2>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 col-md-12 transition-img">
+          <img src="data:image/png;base64,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" class="img-fluid rounded shadow" alt="Team" />
+        </div>
+        <div class="col-lg-6 col-md-12 text-lg-start text-center slide-in-right">
+          <p class="fs-5 lh-lg">
+            <strong>Codeva Technology</strong> is a premier Indian software company known for delivering innovative, scalable, and secure digital solutions.
+            We specialize in web & mobile development, cloud integration, and modern UI/UX design.
+          </p>
+          <p class="fs-6 lh-lg text-muted">
+            Our mission is to empower businesses through elegant technology — backed by expert engineers and a passion for excellence.
+          </p>
+          <a href="#" class="btn btn-primary px-4 mt-3">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES CARDS ===== -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Expertise</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm transition-card">
+            <div class="card-body text-center">
+              <i class="fas fa-code fa-2x text-primary mb-3"></i>
+              <h5 class="card-title">Full-Stack Development</h5>
+              <p class="card-text">From frontend to backend, we create secure and scalable applications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm transition-card">
+            <div class="card-body text-center">
+              <i class="fas fa-palette fa-2x text-danger mb-3"></i>
+              <h5 class="card-title">UI/UX Design</h5>
+              <p class="card-text">We design interfaces that are both beautiful and user-friendly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm transition-card">
+            <div class="card-body text-center">
+              <i class="fas fa-cloud fa-2x text-success mb-3"></i>
+              <h5 class="card-title">Cloud Services</h5>
+              <p class="card-text">Cloud deployment and integrations for scalable business solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <h4 class="mb-4">Get In Touch</h4>
+      <p><i class="fas fa-envelope me-2 text-warning"></i> contact@codevatech.in</p>
+      <p><i class="fas fa-phone me-2 text-info"></i> +91 98765 43210</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-black text-center text-white py-3 transition-fade">
+    <p class="mb-0">&copy; 2025 Codeva Technology | Crafted by Madina Elyasi</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
